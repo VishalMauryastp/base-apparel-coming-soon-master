@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  // main {
+  //   // background-color: hsl(210, 46%, 95%);
+  // }
+  .d-f {
+    display: flex;
+  }
+  .jc-c {
+    justify-content: center;
+  }
+  .jc-sb {
+    justify-content: space-between;
+  }
+  .ai-c {
+    align-items: center;
+  }
+  .min-h-100 {
+    min-height: 100vh;
+  }
+  .b {
+    border: 2px solid red;
+  }
+  .mobile_logo{
+    color: red;
+    display:inline-block      ;
+    min-width: 450px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    @media (min-width:950px) {
+      display: none;
+    }
+  }
