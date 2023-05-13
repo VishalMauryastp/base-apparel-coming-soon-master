@@ -10,6 +10,8 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <script defer src="./js/jquery-3.6.2.min.js"></script>
+    <script defer src="./js/app.js"></script>
     <title>Frontend Mentor | Base Apparel coming soon page</title>
     <style>
       .attribution {
@@ -26,23 +28,28 @@
       <div class="hero d-f jc-c">
         <div class="hero__content d-f">
           <div class="hero__content__inner">
-            <span class="desktop_logo ">
-             <img src="./images/logo.svg" alt="">
+            <span class="desktop_logo">
+              <img src="./images/logo.svg" alt="" />
             </span>
-            <h1>We're coming soon</h1>
+            <h1> <span>We're</span> coming soon</h1>
             <p>
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <div class="input_btn d-f jc-sb ">
-              <input type="text" placeholder="Email Address" />
-              <button><img src="./images/icon-arrow.svg" alt=""></button>
-             
+            <div class="input_btn d-f jc-sb">
+              <input type="text" id="Email" placeholder="Email Address"  />
+              <div class="d-f jc-c ai-c">
+                <img class="icon-error"  src="./images/icon-error.svg" alt="" />
+                <button id="sub_btn">
+                  <img src="./images/icon-arrow.svg" alt="" />
+                </button>
+              </div>
             </div>
             <div class="error">
-
+              please provide a valid email
             </div>
+
           </div>
         </div>
         <div class="hero__image">
@@ -55,7 +62,7 @@
           </picture>
         </div>
         <span class="mobile_logo">
-         <img src="./images/logo.svg" alt="">
+          <img src="./images/logo.svg" alt="" />
         </span>
       </div>
     </main>
